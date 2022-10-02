@@ -37,7 +37,7 @@ class Methods {
       : x = json["x"]!,
         y = json["y"]!;
 
-  //! Redirecting to Default Constructors ->
+  //! Redirecting to Default Constructors with initializer lits (:) ->
   Methods.zeroX({required int y}) : this(x: 0, y: y);
   Methods.zeroY({required int x}) : this(x: x, y: 0);
 

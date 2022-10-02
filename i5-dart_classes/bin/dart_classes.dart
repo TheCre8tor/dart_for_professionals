@@ -22,4 +22,12 @@ void main(List<String> args) {
 
   print(identical(point1, point2));
   print(origin.x);
+
+  //! Factory Constructors ->
+  var randomPoint = RandomPoint.random(isPositive: false);
+  print(randomPoint);
+
+  var singleton = Singleton();
+  var singleton2 = Singleton();
+  print("${singleton}, $singleton2");
 }

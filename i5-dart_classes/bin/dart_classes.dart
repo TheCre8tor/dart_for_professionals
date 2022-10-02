@@ -1,17 +1,25 @@
 import 'package:dart_classes/dart_classes.dart';
-import 'package:dart_classes/src/i1_classes/instance_methods.dart';
 
 void main(List<String> args) {
-  //! class optimization with const keyword
-  var zero = const Methods.zero();
-  var zero2 = const Methods.zero();
-
+  var zero = Methods.zero();
   var fromJson = Methods.fromJson({"x": 1, "y": 8});
+  var zeroY = Methods.zeroY(x: 80);
+  var zeroX = Methods.zeroX(y: 50);
+  var redirectJson = Methods.redirectJson(left: 56, right: 90);
   // var method = Methods(2, 2, 4, a: 9, b: 3, c: 4, d: 5, e: 6);
 
   // print("method --> $method");
   print("zero -> $zero");
   print("fromJson -> $fromJson");
+  print("Zero Y: $zeroY");
+  print("Zero X $zeroX");
+  print("Redirect Json: $redirectJson");
 
-  print(identical(zero, zero2));
+  //! Constant Constructor ->
+  var point1 = const Point(y: 10, x: 15);
+  const point2 = Point(y: 10, x: 15);
+  var origin = Point.origin;
+
+  print(identical(point1, point2));
+  print(origin.x);
 }

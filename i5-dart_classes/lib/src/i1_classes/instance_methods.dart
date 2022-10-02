@@ -1,3 +1,5 @@
+library dart_methods;
+
 class Methods {
   /* A constructor is a method that is called
      whenever a class is instantiated.
@@ -10,7 +12,7 @@ class Methods {
      */
 
   //! Default Constructor
-  Methods({required int x, required int y});
+  Methods({required this.x, required this.y});
 
   // Methods(
   //   int p,
@@ -35,15 +37,17 @@ class Methods {
       : x = json["x"]!,
         y = json["y"]!;
 
-  //! Redirecting Constructors ->
+  //! Redirecting to Default Constructors ->
   Methods.zeroX({required int y}) : this(x: 0, y: y);
   Methods.zeroY({required int x}) : this(x: x, y: 0);
+
+  //! Redirecting to Named Constructor ->
   Methods.redirectJson({required int left, required int right})
       : this.fromJson({"x": left, "y": right});
 
   //! Instance Variables
-  late final int x;
-  late final int y;
+  final int x;
+  final int y;
 
   // int? _private;
 

@@ -1,3 +1,5 @@
+library instance_variables;
+
 /* NOTE: In order for a class to be instantiated
    every class need a constructor, dart implicitly
    create a constructor for you when you do not 

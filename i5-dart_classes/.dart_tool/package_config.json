@@ -1,0 +1,14 @@
+{
+  "configVersion": 2,
+  "packages": [
+    {
+      "name": "dart_classes",
+      "rootUri": "../",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    }
+  ],
+  "generated": "2022-10-02T06:23:43.858796Z",
+  "generator": "pub",
+  "generatorVersion": "2.18.2"
+}

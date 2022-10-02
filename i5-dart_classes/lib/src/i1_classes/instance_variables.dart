@@ -3,7 +3,7 @@
    create a constructor for you when you do not 
    create it yourself. */
 
-class A {
+class Alpha {
   //! Ways of declaring and instantiating
   //! dart variables or fields
   int? _private;

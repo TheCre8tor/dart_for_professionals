@@ -31,6 +31,10 @@ class Cat extends Animal {
      ! Whenever we want to tighting a Type from
      ! a super class to a subclass, we can use
      ! the covariant keyword to archieve it.
+
+     ? By changing the chase parameter type from
+     ? Animal to Mouse is achived through the concept
+     ? of polymorphism.
      */
   @override
   void chase(covariant Mouse mouse) {

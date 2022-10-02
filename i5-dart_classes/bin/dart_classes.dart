@@ -1,3 +1,7 @@
+import 'package:dart_classes/dart_classes.dart';
+
 void main(List<String> args) {
-  print("Hello World");
+  var a = A();
+
+  print(a.runtimeType);
 }

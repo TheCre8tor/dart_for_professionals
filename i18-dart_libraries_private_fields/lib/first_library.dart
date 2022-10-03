@@ -1,6 +1,7 @@
 library first_library;
 
-part 'second_library.dart';
+part 'first_library_extension_1.dart';
+part 'first_library_extension_2.dart';
 
 //! In Dart 1 feature should be placed in a seperate library,
 //! that's the reason why we linked two libraries together.

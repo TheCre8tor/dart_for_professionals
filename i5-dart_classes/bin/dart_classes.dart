@@ -43,4 +43,6 @@ void main(List<String> args) {
     var cat = Cat();
     cat.chase(mouse);
   }
+
+  {}
 }

@@ -7,3 +7,4 @@ export 'src/i1_classes/factory_constructors.dart';
 
 export 'src/i2_classes/inheritance.dart';
 export 'src/i2_classes/abstraction.dart';
+export 'src/i2_classes/mixin.dart';

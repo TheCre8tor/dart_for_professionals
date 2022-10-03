@@ -44,5 +44,11 @@ void main(List<String> args) {
     cat.chase(mouse);
   }
 
-  {}
+  {
+    var musician = Musician();
+    musician.perform();
+
+    print(5.increaseByTen());
+    print(4.increaseByTen());
+  }
 }

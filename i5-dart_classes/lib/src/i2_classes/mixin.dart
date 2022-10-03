@@ -5,19 +5,26 @@
   */
 
 //! Using an abstract class ->
-abstract class Hack {
-  void routes();
-
-  int method({required int x, required int y}) {
-    return x + y;
-  }
+abstract class Performer {
+  void perform() => print("Performs");
 }
 
 //! Using the mixin keyword ->
-mixin Hack3 {
-  void routes();
+//? Guitarist must be mixed with a class that extends Performer class ->
+mixin Guitarist on Performer {
+  void playGuitar() => print("Playing guitar 🎸..");
+  void perform() => playGuitar();
+}
 
-  int method({required int x, required int y}) {
-    return x + y;
-  }
+mixin Drummer {
+  void playDrums() => print("Playing drums 🥁...");
+  void perform() => playDrums();
+}
+
+class Musician extends Performer with Guitarist, Drummer {
+  // @override
+  // void perform() {
+  //   super.playDrums();
+  //   super.playGuitar();
+  // }
 }
